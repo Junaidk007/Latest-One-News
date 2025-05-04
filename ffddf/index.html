@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ask the AI</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    #response { margin-top: 20px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+
+<h2>Ask the AI Anything</h2>
+<input type="text" id="prompt" placeholder="Type your question..." size="40" />
+<button onclick="askAI()">Ask</button>
+
+<div id="response"></div>
+
+<script>
+  async function askAI() {
+    const prompt = document.getElementById("prompt").value;
+    const responseDiv = document.getElementById("response");
+
+    const apiKey = "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";  // 🔐 Replace with your actual API key
+
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${apiKey}`
+      },
+      body: JSON.stringify({
+        model: "gpt-3.5-turbo",
+        messages: [{ role: "user", content: prompt }]
+      })
+    });
+
+    const data = await response.json();
+
+    console.log(data);
+
+    const aiMessage = data.choices[0].message.content;
+
+    responseDiv.textContent = "AI: " + aiMessage;
+  }
+</script>
+
+</body>
+</html>

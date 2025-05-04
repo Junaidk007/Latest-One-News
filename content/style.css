@@ -1,0 +1,201 @@
+/* let list = addElement(i,"li",ul,"content");
+let link = addElement(i,"a",list,"anchor");
+let div1 = addElement(i,"div",link,"img_content");
+let div2 = addElement(i,"div",link,"text_content");
+let image = addElement(i,"img",div1,"news_image");
+let title = addElement(i,"p",div2,"news_title");
+let description = addElement(i,"p",div2,"news_description"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Special+Gothic&family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic&family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Quicksand:wght@300..700&family=Special+Gothic&family=Special+Gothic+Expanded+One&display=swap');
+
+.special-gothic-expanded-one-regular {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+    background-image: url('wp8971662-brooklyn-4k-wallpapers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /* background-color: rgb(43, 4, 73); */
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    background-color: #cac9c9bb;
+    border-radius: 0px 0px 25px 25px;
+    height: 41px;
+    margin: -8px -8px 0px -9px;
+}
+
+.navTitle {
+    margin: 5px 0px 0px 70px;
+    font-size: 1.25rem;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+}
+
+.navi {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin: 0 40px 0 0px;
+}
+
+.navLI {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.head1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
+    margin: 0px 0px 10% -7px;
+    width: 40%;
+    height: 320px;
+}
+
+.quot {
+    padding: 0 0 0 45px;
+    font-size: 2.5rem;
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-style: normal;
+}
+
+.bold {
+    padding: 0 2px 0 55px;
+    font-size: 2rem;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quot,.bold{
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    background-color: #cac9c97c;
+    /* margin: 2%; */
+    border-radius: 55px 55px 0 0;
+    box-shadow: 0 3.52113px 10.56338px 0 rgba(0, 0, 0, .04);
+    margin: -5% 0px -2% -7px;
+    width: 101%;
+    padding: 0px 0% 0px 0px;
+}
+
+.list_container {
+    list-style-type: none;
+    /* background-color: #cdcdd3; */
+    margin: 0% 1% 0% 1%;
+    padding: 3% 3% 3% 2%;
+}
+
+.anchor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* allows wrapping on small screens */
+    text-decoration: none;
+    color: black;
+    gap: 15px;
+    background-color: rgba(255, 254, 254, 0.716);
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.text_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    padding: 0px 65px 0px 65px;
+    /* background-color: #ffffffad; */
+    /* width: 50%; */
+    /* border-radius: 20px; */
+    flex: 1;
+    min-width: 280px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.img_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-width: 280px;
+    max-width: 600px;
+    width: 100%;
+}
+
+
+.news_image {
+    width: 100%;
+    max-width: 425px;
+    height: auto;
+}
+
+img {
+    border-radius: 15px;
+    content: unset;
+}
+
+.content {
+    margin: 0 0 25px 0;
+}
+
+.news_title {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    /* margin: 0px 0 0 0; */
+}
+
+.news_description {
+    font-family: "Special Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    text-align: left;
+    color: rgb(103, 103, 103);
+}
+
+.news_title,
+.news_description {
+    width: 115%;
+}
+
+/* .list_container p:not(:last-child)::after {
+    background: #000000;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    position: absolute;
+    right: 84px;
+    width: calc(64% - 250px);
+}     */
+
+.list_container p:not(:last-child) {
+    border-bottom: 1px solid black;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+}
+
