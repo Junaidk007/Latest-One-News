@@ -17,6 +17,11 @@ let description = addElement(i,"p",div2,"news_description"); */
     font-style: normal;
 }
 
+*{
+   padding: 0;
+   margin: 0;
+   
+}
 
 body {
     background-image: url('wp8971662-brooklyn-4k-wallpapers.jpg');
